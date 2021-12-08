@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
       .then(res => {
-        // console.log(res.data);
+        console.log(res.data);
         setData(res.data);
       })
       .catch(err => {
@@ -23,8 +23,7 @@ function App() {
         <Header />
       }
       {
-        console.log(data.title)
-        // <TopContent img={data}/>
+        <TopContent img={data.url} title={data.title} date={data.date} />
       }
       <p>
         Read through the instructions in the README.md file to build your NASA
