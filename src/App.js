@@ -23,9 +23,8 @@ function App() {
     // load random picture
     axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=1`)
       .then(res => {
-        console.log(res.data[0]);
+        // console.log(res.data[0]);
         setRandomPic(res.data[0]);
-        console.log(res.data[0].title);
       })
       .catch(err => {
         console.error(err);
