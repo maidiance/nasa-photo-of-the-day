@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const StyledContent = styled.div`
     img {
         width: 70%;
+        max-width: 100%;
     }
     .detail {
         display: flex;

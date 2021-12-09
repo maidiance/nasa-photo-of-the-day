@@ -6,5 +6,4 @@ export default {
     black: '#09090a',
     white: '#f8f8ff',
     breakpointMobile: '(max-width: 550px)',
-
 }

@@ -3,13 +3,18 @@ import Picture from './Picture.js';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
+    max-width: 100%;
     .gallery {
-        box-sizing: content-box;
-        width: 80%;
+        box-sizing: border-box;
         display: flex;
+        padding: 2%;
         justify-content: space-between;
     }
-    
+    h3 {
+        padding: 2%;
+        color: ${props => props.theme.white};
+        background-color: ${props => props.theme.tertiaryColor};
+    }
 `
 
 export default function MainBody(props){
