@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledPicture = styled.div`
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -16,12 +17,14 @@ const StyledPicture = styled.div`
         padding: 2%;
     }
     h3 {
+        margin: 0 auto;
         border-style: solid;
         border-color: ${props => props.theme.black};
         background-color: ${props => props.theme.secondaryColor};
         color: ${props => props.theme.black};
     }
     p {
+        margin: 0 auto;
         padding: 2%;
         background-color: ${props => props.theme.secondaryColor};
         color: ${props => props.theme.white};

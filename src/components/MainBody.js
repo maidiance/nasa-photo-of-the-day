@@ -5,12 +5,14 @@ import styled from 'styled-components';
 const StyledContainer = styled.div`
     max-width: 100%;
     .gallery {
+        margin: 0 auto;
         box-sizing: border-box;
         display: flex;
         padding: 2%;
         justify-content: space-between;
     }
     h3 {
+        margin: 2% auto;
         padding: 2%;
         color: ${props => props.theme.white};
         background-color: ${props => props.theme.tertiaryColor};
