@@ -7,7 +7,9 @@ export default function MainBody(props){
         <div className='container'>
             <h3>More pictures</h3>
             {
-                <Picture info={props.randomPic} />
+                props.randomPics.map(image => {
+                    return <Picture info={image} />;
+                })
             }
         </div>
     )

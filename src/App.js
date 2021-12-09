@@ -8,7 +8,7 @@ import { API_KEY } from "./constants/index.js";
 
 function App() {
   const [data, setData] = useState({});
-  const [randomPic, setRandomPic] = useState({});
+  const [randomPics, setRandomPics] = useState([]);
   
   useEffect(() => {
     // load NASA picture of the day data
@@ -21,10 +21,10 @@ function App() {
         console.error(err);
       })
     // load random picture
-    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=1`)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=3`)
       .then(res => {
-        // console.log(res.data[0]);
-        setRandomPic(res.data[0]);
+        // console.log(res.data);
+        setRandomPics(res.data);
       })
       .catch(err => {
         console.error(err);
@@ -43,7 +43,7 @@ function App() {
       }
       {
         // render random image(s)
-        <MainBody randomPic={randomPic} />
+        <MainBody randomPics={randomPics} />
       }
     </div>
   );
