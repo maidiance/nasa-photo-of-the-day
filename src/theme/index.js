@@ -2,9 +2,9 @@
 export default {
     primaryColor: '#44008b',
     secondaryColor: '#9f45b0',
-    tertiaryColor: '#fe4f2',
+    tertiaryColor: '#443c4c',
     black: '#09090a',
-    white: '#747682',
+    white: '#f8f8ff',
     breakpointMobile: '(max-width: 550px)',
 
 }
