@@ -5,7 +5,7 @@ export default function TopContent(props) {
     return (
         <div className='container'>
             <h2><span role="img" aria-label='camera'>📷</span> Photo of the day</h2>
-            <img className='top-img' src={props.img} alt='NASA provided'></img>
+            <img className='top-img' src={props.img} alt={props.title}></img>
             <h3>{props.title}</h3>
             <p>{props.date}</p>
         </div>
